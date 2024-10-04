@@ -1,0 +1,15 @@
+{
+    "name": "chatapp",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "npm run dev --prefix client",
+        "server": "npm run dev --prefix server",
+        "socket": "npm run dev --prefix socket",
+        "start": "concurrently \"npm run client\" \"npm run server\" \"npm run socket\"",
+        "build-client": "npm run build --prefix client", 
+        "build": "npm run build-client" 
+    },
+    "devDependencies": {
+        "concurrently": "^9.0.1"
+    }
+}
